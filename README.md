@@ -82,16 +82,9 @@ About XBee, BB Car, OpenMV.
 <!-- Screenshot -->
 ## Results
 
-* Part 1
+* Part 1 Video
 
-    <iframe
-        width="640"
-        height="480"
-        src="https://www.youtube.com/watch?v=NePzGIxofaE"
-        frameborder="0"
-        allow="autoplay; encrypted-media"
-        allowfullscreen
-    ></iframe>
+    [![Part one demo](https://img.youtube.com/vi/NePzGIxofaE/0.jpg)](https://www.youtube.com/watch?v=NePzGIxofaE)
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
