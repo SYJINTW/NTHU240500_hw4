@@ -3,8 +3,8 @@
 #include "mbed_rpc.h"
 #include "math.h"
 
-#define minThreshold 175
-#define maxThreshold 185
+#define minThreshold 174
+#define maxThreshold 186
 
 Ticker servo_ticker;
 PwmOut pin5(D5), pin6(D6);
