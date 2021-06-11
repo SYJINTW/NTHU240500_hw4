@@ -1,7 +1,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-This is a project for Embedded System Lab's homework.
+This is a project for Embedded System Lab's homework.  
 About XBee, BB Car, OpenMV. 
 
 ### Built With
