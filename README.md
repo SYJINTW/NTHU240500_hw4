@@ -107,17 +107,17 @@ To run tests, run the following command
 
 ### Part 1 Video
 
-    [![Part one demo](https://img.youtube.com/vi/NePzGIxofaE/0.jpg)](https://www.youtube.com/watch?v=NePzGIxofaE)
+  [![Part one demo](https://img.youtube.com/vi/NePzGIxofaE/0.jpg)](https://www.youtube.com/watch?v=NePzGIxofaE)
 
 ### Part 2 Video
 
-    [![Part two demo1](https://img.youtube.com/vi/vPuVp3WOvOo/0.jpg)](https://www.youtube.com/watch?v=vPuVp3WOvOo)
+  [![Part two demo1](https://img.youtube.com/vi/vPuVp3WOvOo/0.jpg)](https://www.youtube.com/watch?v=vPuVp3WOvOo)
 
-    [![Part two demo2](https://img.youtube.com/vi/1ElQ3R_WQgg/0.jpg)](https://www.youtube.com/watch?v=1ElQ3R_WQgg)
+  [![Part two demo2](https://img.youtube.com/vi/1ElQ3R_WQgg/0.jpg)](https://www.youtube.com/watch?v=1ElQ3R_WQgg)
 
 ### Part 3 Video
 
-    [![Part three demo](https://img.youtube.com/vi/uFNfxIMsOAA/0.jpg)](https://www.youtube.com/watch?v=uFNfxIMsOAA)
+  [![Part three demo](https://img.youtube.com/vi/uFNfxIMsOAA/0.jpg)](https://www.youtube.com/watch?v=uFNfxIMsOAA)
 
 
   
