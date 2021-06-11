@@ -1,4 +1,6 @@
-<!-- ABOUT THE PROJECT -->
+
+# EE240500 Homework 4
+
 ## About The Project
 
 This is a project for Embedded System Lab's homework.  
@@ -42,9 +44,23 @@ About XBee, BB Car, OpenMV.
 4. Also use PING to measure the distance between BB Car and AprilTag surface.
 5. Please show and verify (use a ruler) the distance measured above.
 
+## Run Locally
 
-<!-- GETTING STARTED -->
-## Getting Started
+Clone the project
+
+```bash
+  git clone https://github.com/SYJINTW/NTHU240500_hw4.git
+```
+
+Go to the project directory
+
+```bash
+  cd NTHU240500_hw4
+```
+
+## Running Tests
+
+To run tests, run the following command
 
 ### Part 1
 
@@ -59,36 +75,56 @@ About XBee, BB Car, OpenMV.
 
 #### Running & compile
 
-* Embedding in B_L4S5I_IOT01A
-  
-    ```sh
+  ```bash
+    cd part1
+    mbed add https://gitlab.larc-nthu.net/ee2405_2021/bbcar
     sudo mbed compile --source . --source ~/ee2405/mbed-os-build/ -m B_L4S5I_IOT01A -t GCC_ARM -f
-    ```
-
-* Run python FFT.py to analysis the wave
-  
-    ```sh
     sudo python3 car.py
-    ```
+  ```
+
 ### Part 2
+
+#### Running & compile
+
+  ```bash
+    cd part2
+    mbed add https://gitlab.larc-nthu.net/ee2405_2021/bbcar
+    sudo mbed compile --source . --source ~/ee2405/mbed-os-build/ -m B_L4S5I_IOT01A -t GCC_ARM -f
+  ```
 
 ### Part 3
 
-<!-- ROADMAP -->
-## Roadmap
+#### Running & compile
 
-
-
-<!-- Screenshot -->
-## Results
+  ```bash
+    cd part3
+    mbed add https://gitlab.larc-nthu.net/ee2405_2021/bbcar
+    sudo mbed compile --source . --source ~/ee2405/mbed-os-build/ -m B_L4S5I_IOT01A -t GCC_ARM -f
+    sudo screen /dev/ttyACM0
+  ```
+  
+## Demo
 
 * Part 1 Video
 
     [![Part one demo](https://img.youtube.com/vi/NePzGIxofaE/0.jpg)](https://www.youtube.com/watch?v=NePzGIxofaE)
 
-<!-- ACKNOWLEDGEMENTS -->
+* Part 2 Video
+
+    [![Part two demo1](https://img.youtube.com/vi/vPuVp3WOvOo/0.jpg)](https://www.youtube.com/watch?v=vPuVp3WOvOo)
+
+    [![Part two demo2](https://img.youtube.com/vi/1ElQ3R_WQgg/0.jpg)](https://www.youtube.com/watch?v=1ElQ3R_WQgg)
+
+* Part 3 Video
+
+    [![Part three demo](https://img.youtube.com/vi/uFNfxIMsOAA/0.jpg)](https://www.youtube.com/watch?v=uFNfxIMsOAA)
+
+
+  
 ## Acknowledgements
 
-* [Electronics Tutorials](https://www.electronics-tutorials.ws/filter/filter_2.html)
-* [w3schools.com](https://www.w3schools.com/python/)
-
+ - [Electronics Tutorials](https://www.electronics-tutorials.ws/filter/filter_2.html)
+ - [w3schools.com](https://www.w3schools.com/python/)
+ - [tensorflow](https://github.com/tensorflow/models/tree/master/research/slim?fbclid=IwAR3CeDa2WRadJT7cvaZa723IJGDV72QhXXCNj4NXJc41U0Of6PkQaa5EG5c#preparing-the-datasets)
+ - [openmv-cam-h7-plus](https://openmv.io/products/openmv-cam-h7-plus)
+ - [apriltag image](https://github.com/AprilRobotics/apriltag-imgs/)
