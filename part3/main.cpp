@@ -12,6 +12,7 @@ BufferedSerial pc(USBTX,USBRX); //tx,rx
 BufferedSerial uart(D1,D0); //tx,rx
 BBCar car(pin5, pin6, servo_ticker);
 
+// for Ping to detect length
 DigitalInOut ping(D10);
 Timer t;
 
@@ -19,6 +20,7 @@ void calib(Arguments *in, Reply *out);
 void turning(int flag); // -1 for left, 1 for right 
 RPCFunction Calib(&calib, "calib");
 
+// set CalibTable
 double pwm_table0[] = {-150, -120, -90, -60, -30, 0, 30, 60, 90, 120, 150};
 double speed_table0[] = {-9.646, -9.784, -9.025, -8.445, -4.882, 0.000, 5.777, 10.364, 9.885, 9.895, 9.965};
 double pwm_table1[] = {-150, -120, -90, -60, -30, 0, 30, 60, 90, 120, 150};
@@ -58,8 +60,8 @@ void calib(Arguments *in, Reply *out)
     // if degree is 180, then the car is facing directly to the Apriltag
     if (deg >= minThreshold && deg <= maxThreshold)
     {
+        // active ping to get length
         float val;
-        
         ping.output();
         ping = 0; wait_us(200);
         ping = 1; wait_us(5);
@@ -78,11 +80,9 @@ void calib(Arguments *in, Reply *out)
         return;
     }
     // at left
-    else if (deg > maxThreshold)
-        turning(-1)    
+    else if (deg > maxThreshold) turning(-1)    
     // at right
-    else if (deg < minThreshold)
-        truning(1);
+    else if (deg < minThreshold) turning(1);
 }
 
 void turning(int flag) // -1 for left, 1 for right 

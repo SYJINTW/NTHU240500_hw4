@@ -53,6 +53,7 @@ void parking(Arguments *in, Reply *out)
     double d2 = in->getArg<double>();
     const char *direction = in->getArg<const char *>();
 
+    // set CalibTable
     double pwm_table0[] = {-150, -120, -90, -60, -30, 0, 30, 60, 90, 120, 150};
     double speed_table0[] = {-9.646, -9.784, -9.025, -8.445, -4.882, 0.000, 5.777, 10.364, 9.885, 9.895, 9.965};
     double pwm_table1[] = {-150, -120, -90, -60, -30, 0, 30, 60, 90, 120, 150};
@@ -68,7 +69,7 @@ void parking(Arguments *in, Reply *out)
 
     if (direction[0] == 'w') car.turn(-100, -0.2);
     else if (direction[0] == 'e') car.turn(-100, 0.2);
-    ThisThread::sleep_for(1410);
+    ThisThread::sleep_for(1400);
     car.stop();
 
     ThisThread::sleep_for(500);
